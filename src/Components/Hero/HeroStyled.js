@@ -30,7 +30,6 @@ export const HeroStyled = styled.section`
       color: var(--white);
       position: absolute;
       width: 100%;
-
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -194,10 +193,10 @@ export const HeroStyled = styled.section`
     letter-spacing: 1.5px;
     position: absolute;
     color: var(--black);
-    bottom: -30px;
+    bottom: -10px;
     left: 10px;
     z-index: 1;
-    width: 70px;
+    width: 50px;
     @media (max-width: ${({ theme }) => theme.images}) {
       width: 50px;
       bottom: -170px;
