@@ -107,7 +107,7 @@ const Index = ({ project, itemIndex }) => {
     });
   };
   const handleMouseEnter = () => {
-    setSize("regular");
+    // setSize("regular");
     handleScale(0.8, 1, 500);
     handleOpacity(0, 1, 500);
     handleRotation(state.rotationPosition, 500);
@@ -117,7 +117,7 @@ const Index = ({ project, itemIndex }) => {
   };
 
   const handleMouseLeave = () => {
-    setSize("small");
+    // setSize("small");
     listItem.current.removeEventListener("mousemove", parallax);
     handleOpacity(1, 0, 800);
     handleScale(1, initalState.scale, 500);
@@ -148,9 +148,7 @@ const Index = ({ project, itemIndex }) => {
       />
       <div className={cn("info-block", { "as-active": state.active })}>
         <p className="info-block-header">
-          <span>
-            <Hash />0{itemIndex}
-          </span>
+          <span>{project.info}</span>
         </p>
       </div>
     </IndexStyled>

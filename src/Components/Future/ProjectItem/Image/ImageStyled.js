@@ -6,9 +6,9 @@ export const ImageStyled = styled.div`
     opacity: 0;
     /* position: absolute; */
     /* left: 45vw; */
-    width: auto;
-    height: 450px;
-    /* object-fit: cover; */
+    width: 150px;
+    /* height: 300px; */
+    object-fit: cover;
     /* top: 30vh; */
     pointer-events: none;
     // This is to add timing function for  mouse image parallax

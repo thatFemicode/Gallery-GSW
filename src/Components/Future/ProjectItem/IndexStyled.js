@@ -20,13 +20,16 @@ export const IndexStyled = styled.li`
   line-height: 1.25;
   padding: 5px 0;
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  height: 150px;
+  height: 140px;
+  width: 80%;
+  margin: 0 auto;
   .info-block {
-    position: fixed;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 70vw;
+    left: 65vw;
     z-index: 1;
     text-align: left;
     font-size: 20px;
@@ -35,13 +38,13 @@ export const IndexStyled = styled.li`
       margin-bottom: 20px;
       color: black;
       font-weight: 500;
-      font-size: 24px;
-      svg {
+      font-size: 2rem;
+      /* svg {
         margin-right: 4px;
-      }
+      } */
       span {
-        display: flex;
-        align-items: center;
+        /* display: flex; */
+        /* align-items: center; */
       }
     }
     p {

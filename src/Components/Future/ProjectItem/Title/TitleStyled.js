@@ -4,7 +4,7 @@ export const TitleStyled = styled.div`
   position: relative;
   .menu-title {
     /* font-family: "Space Grotesk", sans-serif; */
-    font-size: 7.5vw;
+    font-size: 5vw;
     text-transform: lowercase;
     z-index: 1;
     line-height: 1.1;
@@ -14,7 +14,7 @@ export const TitleStyled = styled.div`
       top: 0;
       pointer-events: none;
       color: black;
-      clip-path: inset(0 100% 0 0);
+      /* clip-path: inset(0 100% 0 0); */
       transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
@@ -27,7 +27,8 @@ export const TitleStyled = styled.div`
         cursor: pointer;
 
         ~ .clone {
-          clip-path: inset(0 0 0 0);
+          /* clip-path: inset(0 0 0 0); */
+          clip-path: inset(0 100% 0 0);
         }
         ~ .menu-image-container .menu-image {
           opacity: 1;
