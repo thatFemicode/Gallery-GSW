@@ -19,14 +19,20 @@ export const IndexStyled = styled.li`
   cursor: pointer;
   line-height: 1.25;
   padding: 5px 0;
-  display: flex;
+  /* display: flex; */
   /* justify-content: space-between; */
   align-items: center;
-  height: 120px;
+  /* height: 120px; */
   /* width: 90%; */
   /* margin: 0 auto; */
   @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
     height: 90px;
+  }
+  @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
+    height: 300px;
+  }
+  @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
+    height: unset;
   }
   .info-block {
     position: absolute;
@@ -37,15 +43,28 @@ export const IndexStyled = styled.li`
     text-align: left;
     font-size: 20px;
     @media (max-width: ${({ theme }) => theme.mins}) {
-      top: 40%;
+      top: 44%;
     }
     @media (max-width: ${({ theme }) => theme.image}) {
-      top: 45%;
+      top: 250px;
+    }
+    @media (max-width: ${({ theme }) => theme.desktop}) {
+      top: 50%;
+    }
+    @media (max-width: ${({ theme }) => theme.make}) {
+      top: 55%;
+    }
+    @media (max-width: ${({ theme }) => theme.mobil}) {
+      top: 65%;
+      right: 30px;
     }
     @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
       top: 25%;
     }
-
+    @media (min-width: ${({ theme }) => theme.auth}) {
+      left: 35vw;
+      top: 20%;
+    }
     .info-block-header {
       margin-bottom: 20px;
       color: black;
@@ -53,6 +72,9 @@ export const IndexStyled = styled.li`
       font-size: 2rem;
       @media (max-width: ${({ theme }) => theme.mins}) {
         font-size: 1.2rem;
+      }
+      @media (max-width: ${({ theme }) => theme.mobil}) {
+        font-size: 0.975rem;
       }
       /* svg {
         margin-right: 4px;
@@ -85,7 +107,6 @@ export const IndexStyled = styled.li`
       } */
       span {
         transform: translateY(0px);
-
         opacity: 1;
       }
     }

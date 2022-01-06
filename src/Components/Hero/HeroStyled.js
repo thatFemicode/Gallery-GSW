@@ -249,6 +249,9 @@ export const HeroStyled = styled.section`
       letter-spacing: 5px;
       left: -40px;
     }
+    @media (max-width: ${({ theme }) => theme.images}) {
+      top: 10%;
+    }
     @media (max-width: ${({ theme }) => theme.make}) {
       top: 60%;
     }

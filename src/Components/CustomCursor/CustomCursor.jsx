@@ -65,7 +65,7 @@ const CustomCursor = () => {
   }, []);
   return (
     <CustomCursorStyled>
-      <div className={`secondary-cursor ${size}`} ref={secondaryCursor}></div>
+      <div className={`secondary-cursor small`} ref={secondaryCursor}></div>
     </CustomCursorStyled>
   );
 };

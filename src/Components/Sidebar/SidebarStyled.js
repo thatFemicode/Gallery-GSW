@@ -23,6 +23,10 @@ export const SidebarStyled = styled.nav`
   @media (max-width: ${({ theme }) => theme.mobil}) {
     display: none;
   }
+  @media (min-width: ${({ theme }) => theme.auth}) {
+    display: none;
+    /* padding-top: 6rem; */
+  }
   .sidebar-list {
     /* position: absolute; */
     /* top: 50%; */

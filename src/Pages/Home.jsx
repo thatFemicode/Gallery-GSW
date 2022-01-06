@@ -6,7 +6,7 @@ import Layout from "../Components/Layout/Layout";
 import Hero from "../Components/Hero/Hero";
 import Story from "../Components/Story/Story";
 import Future from "../Components/Future/Future";
-
+import Tribute from "../Components/Tribute/Tribute";
 const Home = () => {
   const [active, setActive] = useState("one");
 
@@ -65,6 +65,11 @@ const Home = () => {
             id="three"
             ref={newRef()}
             active={active === "three" ? true : false}
+          />
+          <Tribute
+            id="four"
+            ref={newRef()}
+            active={active === "four" ? true : false}
           />
         </Layout>
       </MainStyled>
