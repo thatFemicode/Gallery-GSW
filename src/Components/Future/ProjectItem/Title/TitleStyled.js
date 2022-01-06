@@ -15,7 +15,7 @@ export const TitleStyled = styled.div`
       pointer-events: none;
       color: black;
       /* clip-path: inset(0 100% 0 0); */
-      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all 0.04s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     &:not(.clone) {
@@ -29,6 +29,7 @@ export const TitleStyled = styled.div`
         ~ .clone {
           /* clip-path: inset(0 0 0 0); */
           clip-path: inset(0 100% 0 0);
+          z-index: 20;
         }
         ~ .menu-image-container .menu-image {
           opacity: 1;

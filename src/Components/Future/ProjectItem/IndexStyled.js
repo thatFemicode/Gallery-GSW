@@ -22,23 +22,38 @@ export const IndexStyled = styled.li`
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  height: 140px;
-  width: 80%;
-  margin: 0 auto;
+  height: 120px;
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+    height: 90px;
+  }
   .info-block {
     position: absolute;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
-    left: 65vw;
+    left: 55vw;
     z-index: 1;
     text-align: left;
     font-size: 20px;
+    @media (max-width: ${({ theme }) => theme.mins}) {
+      top: 40%;
+    }
+    @media (max-width: ${({ theme }) => theme.image}) {
+      top: 45%;
+    }
+    @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+      top: 25%;
+    }
 
     .info-block-header {
       margin-bottom: 20px;
       color: black;
       font-weight: 500;
       font-size: 2rem;
+      @media (max-width: ${({ theme }) => theme.mins}) {
+        font-size: 1.2rem;
+      }
       /* svg {
         margin-right: 4px;
       } */
