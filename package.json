@@ -2,7 +2,6 @@
   "name": "design",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://youtube.com",
   "dependencies": {
     "@dorai-ui/tabs": "^1.0.5",
     "@fullpage/react-fullpage": "^0.1.19",

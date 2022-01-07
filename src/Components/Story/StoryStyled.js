@@ -7,7 +7,7 @@ export const StoryStyled = styled.section`
   position: relative;
   height: 100vh;
   /* height: 100%; */
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: 2rem;
 
   @media (max-width: ${({ theme }) => theme.kobe}) {

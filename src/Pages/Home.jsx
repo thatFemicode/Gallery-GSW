@@ -7,6 +7,7 @@ import Hero from "../Components/Hero/Hero";
 import Story from "../Components/Story/Story";
 import Future from "../Components/Future/Future";
 import Tribute from "../Components/Tribute/Tribute";
+import Footer from "../Components/Footer/Footer";
 const Home = () => {
   const [active, setActive] = useState("one");
 
@@ -72,6 +73,7 @@ const Home = () => {
             active={active === "four" ? true : false}
           />
         </Layout>
+        <Footer />
       </MainStyled>
     </HomeStyled>
   );
