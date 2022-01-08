@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const SidebarStyled = styled.nav`
   position: fixed;
-  top: 400px;
+  top: 380px;
   /* left: 0; */
   z-index: 13;
   /* height: 100vh; */
@@ -14,8 +14,14 @@ export const SidebarStyled = styled.nav`
     right: 700px;
     top: 400px;
   }
-  @media screen and (min-height: 100px) and (max-height: 600px) {
-    top: 400px;
+  @media screen and (min-height: 100px) and (max-height: 800px) and (max-width: 1280px) {
+    top: 370px;
+  }
+  @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+    top: 180px;
+  }
+  @media (max-width: ${({ theme }) => theme.images}) {
+    top: 300px;
   }
   @media (max-width: ${({ theme }) => theme.mins}) {
     right: 5px;

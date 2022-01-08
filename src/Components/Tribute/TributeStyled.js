@@ -16,6 +16,10 @@ export const TributeStyled = styled.section`
   @media (max-width: ${({ theme }) => theme.images}) {
     height: unset;
   }
+  @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
+    height: unset;
+    padding-top: 6rem;
+  }
   @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
     height: 80vh;
   }
@@ -37,6 +41,10 @@ export const TributeStyled = styled.section`
     justify-content: space-between;
     margin: 40px auto;
     width: 95%;
+    @media (max-width: ${({ theme }) => theme.minss}) {
+      width: 80%;
+      /* margin: 0 auto; */
+    }
     @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
       width: 90%;
     }
@@ -52,14 +60,20 @@ export const TributeStyled = styled.section`
       width: 84%;
       margin-top: 4rem;
     }
-
+    @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
+      width: 80%;
+    }
     @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
       width: 80%;
     }
     .title {
       width: 50%;
+      @media (max-width: ${({ theme }) => theme.minss}) {
+        width: 40%;
+        /* margin: 0 auto; */
+      }
       @media (max-width: ${({ theme }) => theme.mins}) {
-        width: 50%;
+        width: 40%;
         /* padding-top: 6rem; */
       }
       @media (max-width: ${({ theme }) => theme.mind}) {
@@ -90,8 +104,12 @@ export const TributeStyled = styled.section`
     }
     .content {
       width: 70%;
+      @media (max-width: ${({ theme }) => theme.minss}) {
+        width: 70%;
+        /* margin: 0 auto; */
+      }
       @media (max-width: ${({ theme }) => theme.mins}) {
-        width: 50%;
+        width: 70%;
         /* padding-top: 6rem; */
       }
       @media (max-width: ${({ theme }) => theme.mind}) {

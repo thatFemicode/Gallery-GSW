@@ -27,6 +27,10 @@ export const StoryStyled = styled.section`
     height: unset;
     /* padding-top: 6rem; */
   }
+  @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
+    height: unset;
+    padding-top: 6rem;
+  }
   @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
     height: 100vh;
     padding-top: 5rem;
@@ -35,6 +39,7 @@ export const StoryStyled = styled.section`
     height: 100vh;
     padding-top: 6rem;
   }
+
   @media (min-width: ${({ theme }) => theme.auth}) {
     height: unset;
     /* padding-top: 6rem; */

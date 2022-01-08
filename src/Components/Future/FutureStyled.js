@@ -22,7 +22,10 @@ export const FutureStyled = styled.section`
       width: 80%;
     }
   }
-
+  @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
+    height: 50vh;
+    padding-top: 6rem;
+  }
   @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
     height: 100vh;
     padding-top: 0;
@@ -38,6 +41,7 @@ export const FutureStyled = styled.section`
   h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
+    font-weight: 700;
     @media (max-width: ${({ theme }) => theme.image}) {
       font-size: 2.5rem;
     }
