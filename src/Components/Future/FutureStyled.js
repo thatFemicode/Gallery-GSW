@@ -59,7 +59,7 @@ export const FutureStyled = styled.section`
     line-height: 2rem;
     position: relative;
     font-weight: 400;
-    z-index: 10;
+    z-index: 8;
     margin-bottom: 2rem;
     @media (max-width: ${({ theme }) => theme.image}) {
       font-size: 0.975rem;

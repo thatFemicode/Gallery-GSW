@@ -49,6 +49,13 @@ import Steph from "./Players/SC.png";
 import Bob from "./Management/BM.JPG";
 import Joe from "./Management/JL.JPG.png";
 import Peter from "./Management/PGB.jpg";
+import Steve from "./Coaches/SK.jpg";
+import Chris from "./Coaches/CDjpg.jpg";
+import Kenny from "./Coaches/KA.jpg";
+import Ron from "./Coaches/RA.jpg";
+import Mike from "./Coaches/MB.jpg";
+import Bruce from "./Coaches/BF.jpg";
+import Dejan from "./Coaches/DM.jpg";
 const content = [
   {
     id: 1,
@@ -159,6 +166,43 @@ export const content2 = [
     image: Bob,
     // name: "Bob Myers",
     // position: "General Manager",
+  },
+];
+export const content3 = [
+  {
+    id: 1,
+    image: Steve,
+    name: "Steve.K",
+  },
+  {
+    id: 2,
+    image: Mike,
+    name: "Mike.B",
+  },
+  {
+    id: 3,
+    image: Kenny,
+    name: "Kenny.A",
+  },
+  {
+    id: 4,
+    image: Ron,
+    name: "Ron.A",
+  },
+  {
+    id: 5,
+    image: Bruce,
+    name: "Bruce.F",
+  },
+  {
+    id: 6,
+    image: Chris,
+    name: "Chris.D",
+  },
+  {
+    id: 7,
+    image: Dejan,
+    name: "Dejan.M",
   },
 ];
 export default content;

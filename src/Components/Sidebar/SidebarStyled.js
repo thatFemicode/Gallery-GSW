@@ -3,7 +3,7 @@ export const SidebarStyled = styled.nav`
   position: fixed;
   top: 380px;
   /* left: 0; */
-  z-index: 13;
+  z-index: 9;
   /* height: 100vh; */
   right: 60px;
 

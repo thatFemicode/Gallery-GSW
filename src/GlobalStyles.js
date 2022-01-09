@@ -33,6 +33,9 @@ const GlobalStyle = createGlobalStyle`
 
     /* font-size:1vw; */
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   /* background-color:pink; */
 /* overflow: hidden; */

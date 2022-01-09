@@ -10,7 +10,7 @@ export const NavbarStyled = styled.nav`
   .navigation {
     position: relative;
     /* background: transparent; */
-
+    z-index: 10;
     /* width: 100%; */
     display: flex;
     justify-content: space-between;
@@ -41,6 +41,12 @@ export const NavbarStyled = styled.nav`
       align-items: center;
       @media (max-width: ${({ theme }) => theme.images}) {
         display: none;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
       }
     }
   }
