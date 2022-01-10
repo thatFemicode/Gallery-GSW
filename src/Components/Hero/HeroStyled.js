@@ -143,6 +143,9 @@ export const HeroStyled = styled.section`
       @media (max-width: ${({ theme }) => theme.make}) {
         width: 120px;
       }
+      @media (max-width: ${({ theme }) => theme.max}) {
+        width: 95px;
+      }
       @media (max-width: ${({ theme }) => theme.foot}) {
         width: 80px;
       }
@@ -171,8 +174,12 @@ export const HeroStyled = styled.section`
           left: 40px;
         }
         @media (max-width: ${({ theme }) => theme.max}) {
-          top: -160px;
+          top: -120px;
           left: 20px;
+        }
+        @media (max-width: ${({ theme }) => theme.foot}) {
+          /* bottom: -160px; */
+          top: -70px;
         }
       }
       &.right {
@@ -199,8 +206,13 @@ export const HeroStyled = styled.section`
           right: 40px;
         }
         @media (max-width: ${({ theme }) => theme.max}) {
-          bottom: -160px;
+          /* bottom: -160px; */
+          bottom: -120px;
           right: 20px;
+        }
+        @media (max-width: ${({ theme }) => theme.foot}) {
+          /* bottom: -160px; */
+          bottom: -70px;
         }
       }
     }
@@ -253,7 +265,7 @@ export const HeroStyled = styled.section`
       top: 10%;
     }
     @media (max-width: ${({ theme }) => theme.make}) {
-      top: 60%;
+      top: 70%;
     }
     svg {
       @media (max-width: ${({ theme }) => theme.max}) {

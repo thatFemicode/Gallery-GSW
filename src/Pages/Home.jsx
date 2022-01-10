@@ -1,4 +1,4 @@
-import React, { useState, createRef, useEffect } from "react";
+import React, { useState, createRef, useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import { MainStyled } from "../MainStyled";
 import { HomeStyled } from "./HomeStyled";
@@ -8,11 +8,13 @@ import Story from "../Components/Story/Story";
 import Future from "../Components/Future/Future";
 import Tribute from "../Components/Tribute/Tribute";
 import Footer from "../Components/Footer/Footer";
+// import Scroll from "../Components/SmoothScroll/SmoothScroll";
+
 const Home = () => {
   const [active, setActive] = useState("one");
 
   let refs = [];
-
+  const app = useRef(null);
   // create and track refs for later use
   const newRef = () => {
     const ref = createRef();
@@ -47,10 +49,12 @@ const Home = () => {
       observer.observe(ref.current)
     );
   }, []);
+
   return (
     <HomeStyled>
       <MainStyled>
         <Navbar />
+        {/* <Scroll />  */}
         <Layout refs={refs}>
           <Hero
             id="one"

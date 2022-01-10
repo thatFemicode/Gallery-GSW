@@ -34,6 +34,12 @@ export const IndexStyled = styled.li`
   @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
     height: unset;
   }
+  @media (max-width: ${({ theme }) => theme.make}) {
+    height: 90px;
+  }
+  @media (max-width: ${({ theme }) => theme.adapt}) {
+    height: 50px;
+  }
   .info-block {
     position: absolute;
     top: 10%;
@@ -51,15 +57,20 @@ export const IndexStyled = styled.li`
     @media (max-width: ${({ theme }) => theme.desktop}) {
       top: 50%;
     }
+
+    @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+      top: 25%;
+    }
     @media (max-width: ${({ theme }) => theme.make}) {
       top: 55%;
     }
     @media (max-width: ${({ theme }) => theme.mobil}) {
-      top: 65%;
-      right: 30px;
+      top: 51%;
+      /* right: 30px; */
     }
-    @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
-      top: 25%;
+    @media (max-width: ${({ theme }) => theme.adapt}) {
+      top: 64%;
+      /* right: 30px; */
     }
     @media (min-width: ${({ theme }) => theme.auth}) {
       left: 35vw;
@@ -74,7 +85,7 @@ export const IndexStyled = styled.li`
         font-size: 1.2rem;
       }
       @media (max-width: ${({ theme }) => theme.mobil}) {
-        font-size: 0.975rem;
+        font-size: 0.875rem;
       }
       /* svg {
         margin-right: 4px;

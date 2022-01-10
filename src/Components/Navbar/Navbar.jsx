@@ -31,19 +31,16 @@ const Navbar = () => {
         clicked: true,
         menuName: "Close",
       });
-      console.log(1);
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
         menuName: "Dubnation",
       });
-      console.log(2);
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
         menuName: "Close",
       });
-      console.log(3);
     }
   };
   return (
@@ -53,15 +50,15 @@ const Navbar = () => {
           <div className="logo">
             <img src={logo} alt="" />
           </div>
-          <div className="mid-nav">
+          {/* <div className="mid-nav">
             <AnimatedNavbar duration={duration} />
-          </div>
+          </div> */}
           <div className="hashtag">
             <button onClick={handleMenu} disabled={disabled}>
               <Hash /> {state.menuName}
             </button>
           </div>
-          <Buttons clicked={isSidebarOpen} onClick={openSidebar} />
+          {/* <Buttons clicked={isSidebarOpen} onClick={openSidebar} /> */}
         </div>
       </OuterLayout>
       <Hamburger state={state} />

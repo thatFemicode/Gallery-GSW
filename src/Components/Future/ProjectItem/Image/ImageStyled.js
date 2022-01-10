@@ -27,17 +27,7 @@ export const ImageStyled = styled.div`
     @media (max-width: ${({ theme }) => theme.desktop}) {
       right: 150px;
     }
-    @media (max-width: ${({ theme }) => theme.blogNav}) {
-      right: 60px;
-      width: 180px;
-    }
-    @media (max-width: ${({ theme }) => theme.make}) {
-      width: 150px;
-    }
-    @media (max-width: ${({ theme }) => theme.mobil}) {
-      width: 100px;
-      top: 50vh;
-    }
+
     @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
       width: 270px;
       top: 25vh;
@@ -52,6 +42,22 @@ export const ImageStyled = styled.div`
       width: auto;
       height: clamp(400px, 20vw, 20vw);
       top: 32vh;
+    }
+    @media (max-width: ${({ theme }) => theme.blogNav}) {
+      right: 60px;
+      width: 180px;
+    }
+    @media (max-width: ${({ theme }) => theme.make}) {
+      width: 150px;
+    }
+    @media (max-width: ${({ theme }) => theme.mobil}) {
+      width: 90px;
+      top: 55vh;
+    }
+    @media (max-width: ${({ theme }) => theme.adapt}) {
+      width: 80px;
+      top: 60vh;
+      /* right: 30px; */
     }
     @media (min-width: ${({ theme }) => theme.auth}) {
       right: -30px;

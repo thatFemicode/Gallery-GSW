@@ -40,7 +40,7 @@ const Tribute = forwardRef(({ id, children }, ref) => {
               trio core who ran the league for close to six years with the
               addition of great players such as Andre Iguodala, Kevin Durant
               etc. Watch the Video to follow the Journey and look through the
-              bus run..DubNation
+              successful run..DubNation
             </p>
           </div>
         </div>

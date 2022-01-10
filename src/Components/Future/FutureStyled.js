@@ -34,6 +34,9 @@ export const FutureStyled = styled.section`
   @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
     height: 100vh;
   }
+  @media (max-width: ${({ theme }) => theme.make}) {
+    padding-top: 2rem;
+  }
   @media (min-width: ${({ theme }) => theme.auth}) {
     height: unset;
     /* padding-top: 6rem; */
@@ -59,7 +62,9 @@ export const FutureStyled = styled.section`
     line-height: 2rem;
     position: relative;
     font-weight: 400;
+    font-weight: 700;
     z-index: 8;
+    text-align: justify;
     margin-bottom: 2rem;
     @media (max-width: ${({ theme }) => theme.image}) {
       font-size: 0.975rem;

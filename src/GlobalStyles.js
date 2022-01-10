@@ -57,6 +57,9 @@ li{
 .no-scroll{
   height:100vh;
   overflow:hidden;
+  @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+         overflow:auto
+          }
 }
 /* .no-scroll{
   height:100vh;

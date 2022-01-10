@@ -56,7 +56,7 @@ const Hamburger = ({ state }) => {
       });
       staggerReveal(reveal1, reveal2);
       fadeInUp(info);
-      staggerText(line1);
+      staggerText(line1, line2, line3);
     }
   }, [state]);
   return (
@@ -117,7 +117,7 @@ const Hamburger = ({ state }) => {
                 <Heading>Warriors franchise</Heading>
 
                 <div className="main">
-                  <div className="coaches">
+                  <div ref={(el) => (line2 = el)} className="coaches">
                     <Heading>Coaches</Heading>
                     <p className="coaches-text">Warriors Coaching Staff</p>
                     <FlexD>
@@ -128,9 +128,9 @@ const Hamburger = ({ state }) => {
                       </div>
                     </FlexD>
                   </div>
-                  <div className="roster">
+                  <div ref={(el) => (line3 = el)} className="roster">
                     <Heading>Roster</Heading>
-                    <p>Warriors Roster</p>
+                    <p className="coaches-text">Warriors Roster</p>
                     <FlexS>
                       <div className="teams-img">
                         {content.map((item, index) => {

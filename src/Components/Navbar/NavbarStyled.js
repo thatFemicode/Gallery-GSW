@@ -28,6 +28,9 @@ export const NavbarStyled = styled.nav`
       @media (max-width: ${({ theme }) => theme.images}) {
         width: 55px;
       }
+      @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+        width: 65px;
+      }
     }
     .mid-nav {
       transition: all 0.2s ease-in-out;
@@ -39,9 +42,9 @@ export const NavbarStyled = styled.nav`
       margin-top: 1rem;
       display: flex;
       align-items: center;
-      @media (max-width: ${({ theme }) => theme.images}) {
+      /* @media (max-width: ${({ theme }) => theme.images}) {
         display: none;
-      }
+      } */
       button {
         display: flex;
         align-items: center;

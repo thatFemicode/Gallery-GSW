@@ -34,8 +34,23 @@ export const OuterLayout = styled.section`
   overflow: hidden; */
 `;
 export const InnerLayout = styled.section`
-  padding: 2rem 2rem;
-  @media (max-width: ${({ theme }) => theme.max}) {
-    padding: 2rem 1rem;
+  /* max-width: 1300px; */
+  max-width: 1400px;
+  width: 100%;
+  /* width: 70%; */
+  margin: 0 auto;
+  position: relative;
+  /* padding: 3rem 2rem; */
+  @media (max-width: ${({ theme }) => theme.mins}) {
+    max-width: 1100px;
+    width: 100%;
+  }
+  @media (max-width: ${({ theme }) => theme.mind}) {
+    max-width: 950px;
+    width: 100%;
+  }
+  @media (max-width: ${({ theme }) => theme.post}) {
+    max-width: 768px;
+    width: 100%;
   }
 `;

@@ -4,6 +4,9 @@ import { Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import CustomRoute from "./Components/CustomSwitch/CustomSwitch";
 import Home from "./Pages/Home";
+import Scroll from "./Components/SmoothScroll/SmoothScroll";
+import locomotiveScroll from "locomotive-scroll";
+import React, { useEffect, useRef } from "react";
 function App() {
   const theme = {
     colors: {
@@ -40,6 +43,8 @@ function App() {
     auth: "1800px",
     img: "1201px",
   };
+  const scrollRef = React.createRef();
+
   return (
     <ThemeProvider theme={theme}>
       <MainStyled>

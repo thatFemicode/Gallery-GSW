@@ -90,9 +90,7 @@ export const StoryStyled = styled.section`
         height: 440px;
         width: 60%;
       }
-      @media (max-width: ${({ theme }) => theme.blogNav}) {
-        height: 350px;
-      }
+
       @media (max-width: ${({ theme }) => theme.min}) {
         width: 70%;
       }
@@ -113,6 +111,15 @@ export const StoryStyled = styled.section`
       @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
         height: 400px;
         width: 60%;
+      }
+      @media (max-width: ${({ theme }) => theme.blogNav}) {
+        height: 350px;
+      }
+      @media (max-width: ${({ theme }) => theme.max}) {
+        height: 400px;
+      }
+      @media (max-width: ${({ theme }) => theme.adapt}) {
+        height: 300px;
       }
       z-index: 7;
       .top-right {
@@ -143,12 +150,7 @@ export const StoryStyled = styled.section`
         @media (max-width: ${({ theme }) => theme.desktop}) {
           width: 170px;
         }
-        @media (max-width: ${({ theme }) => theme.blogNav}) {
-          width: 150px;
-        }
-        @media (max-width: ${({ theme }) => theme.adapt}) {
-          width: 120px;
-        }
+
         @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
           width: 350px;
         }
@@ -157,6 +159,12 @@ export const StoryStyled = styled.section`
         }
         @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
           width: 200px;
+        }
+        @media (max-width: ${({ theme }) => theme.blogNav}) {
+          width: 150px;
+        }
+        @media (max-width: ${({ theme }) => theme.adapt}) {
+          width: 100px;
         }
       }
       .bottom-left {
@@ -194,9 +202,7 @@ export const StoryStyled = styled.section`
         @media (max-width: ${({ theme }) => theme.blogNav}) {
           width: 150px;
         }
-        @media (max-width: ${({ theme }) => theme.adapt}) {
-          width: 120px;
-        }
+
         @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
           width: 350px;
         }
@@ -206,6 +212,12 @@ export const StoryStyled = styled.section`
         @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
           width: 200px;
           bottom: 100px;
+        }
+        @media (max-width: ${({ theme }) => theme.blogNav}) {
+          width: 150px;
+        }
+        @media (max-width: ${({ theme }) => theme.adapt}) {
+          width: 100px;
         }
       }
       .side-image {

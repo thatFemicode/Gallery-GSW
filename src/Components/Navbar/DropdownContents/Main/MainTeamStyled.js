@@ -5,6 +5,6 @@ export const MainTeamStyled = styled.div`
   p {
     font-size: 0.7rem;
     mix-blend-mode: difference;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 `;
