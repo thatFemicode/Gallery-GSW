@@ -1,13 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { OuterLayout } from "../../../Layout/Layout";
-import {
-  HamburgerStyled,
-  Heading,
-  Flex,
-  FlexD,
-  FlexS,
-} from "./HamburgerStyled";
-import { Link } from "react-router-dom";
+import { HamburgerStyled, Heading, FlexD, FlexS } from "./HamburgerStyled";
+
 import { gsap } from "gsap";
 import Steph from "../img/Stephens.jpg";
 
@@ -17,11 +11,9 @@ import {
   fadeInUp,
   handleHover,
   handleHoverExit,
-  handleCityReturn,
-  handleCity,
   staggerRevealClose,
 } from "./Animation";
-import content, { content2, content3 } from "../DropdownContents/data";
+import content, { content3 } from "../DropdownContents/data";
 
 import MainTeam from "../DropdownContents/Main/MainTeam";
 

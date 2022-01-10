@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useRef, useEffect } from "react";
+import React, { forwardRef, useState } from "react";
 import { TributeStyled } from "./TributeStyled";
 import { OuterLayout } from "../../Layout/Layout";
 import ReactPlayer from "react-player";
@@ -6,7 +6,7 @@ import Steph from "./img/Steph.jpg";
 import { Hash } from "react-feather";
 // import VideoPlayer from "react-video-js-player";
 const Tribute = forwardRef(({ id, children }, ref) => {
-  const [control, setControls] = useState(true);
+  const [control] = useState(true);
   return (
     <TributeStyled ref={ref} id={id}>
       <OuterLayout>

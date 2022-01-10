@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { NavbarStyled, Buttons } from "./NavbarStyled";
+import React, { useState } from "react";
+import { NavbarStyled } from "./NavbarStyled";
 import { OuterLayout } from "../../Layout/Layout";
 import logo from "./img/GSW.svg";
 import { Hash } from "react-feather";
-import AnimatedNavbar from "./AnimatedNavbar";
-import { useGlobalContext } from "../../Context/context.js";
+// import AnimatedNavbar from "./AnimatedNavbar";
+// import { useGlobalContext } from "../../Context/context.js";
 import Hamburger from "./Hamburger/Hamburger";
 const Navbar = () => {
-  const [duration, setDuration] = useState(300);
-  const { openSidebar, isSidebarOpen } = useGlobalContext();
+  // const [duration, setDuration] = useState(300);
+
   const [state, setState] = useState({
     initial: false,
     clicked: null,
