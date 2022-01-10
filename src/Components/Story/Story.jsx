@@ -27,16 +27,20 @@ const Story = forwardRef(({ id, children }, ref) => {
             <p>
               Having ran the league for several years with an historic team
               winning Three championships and multiple finals run, the Dubs hold
-              the record for the best record in the regular season (73-9) will
-              be distracted by the readable content of a page when looking at
-              its layout. The point of using lorem ipsum is that it has
-              more-o-less normal distribution of letters as opposed to using
-              Content here, making it look like readable english. Many desktop
-              publishing packages and web page editors now use Lorem ipsum as
-              their default model text and search for lorem ipsum will uncover
-              many websites still in their infancy. Various versions have
-              evolved over the years, sometimes by accidents sometimes on
-              purpose (injected humour and like)
+              the record for the best record in the regular season (73-9) which
+              will never likely be broken by any other team in the league in
+              years to come. Looking at the dubs story, Analyst in the Media
+              always talk about the team having All stars but critically other
+              than Kevin Durant, the warriors just drafted the right players who
+              know the true meaning of hard work and being great, the team from
+              the Bay Area is just one of a kind, a franchise that has good feel
+              from ownership to the last person on the payroll. The dubs success
+              will always be attributed to mark Jackson who came and changed the
+              mindset of the young players back in 20113/2014 before steve kerr
+              and his revolutionary Motion offense came into existence. The
+              warriors will always be on the revolutionary teams in the history
+              of the NBA because they brought about this modern basketball that
+              we are all witnessing today.
             </p>
           </div>
         </div>

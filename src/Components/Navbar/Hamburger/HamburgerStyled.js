@@ -21,6 +21,17 @@ export const HamburgerStyled = styled.div`
     width: 100%;
     z-index: -1;
   }
+  .menu-primary-background-color {
+    background: #ffc72c;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
   .menu-layer {
     position: relative;
     background: #fff;
@@ -31,6 +42,9 @@ export const HamburgerStyled = styled.div`
     /* overflow: auto; */
     @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
       overflow: auto;
+    }
+    @media (max-width: ${({ theme }) => theme.images}) {
+      overflow: hidden;
     }
     .wrapper {
       position: relative;

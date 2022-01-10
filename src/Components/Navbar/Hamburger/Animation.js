@@ -1,8 +1,8 @@
 import gsap from "gsap";
 
 // OPEN MENU
-export const staggerReveal = (node1, node2) => {
-  gsap.from([node1, node2], {
+export const staggerReveal = (node1, node2, node3) => {
+  gsap.from([node1, node2, node3], {
     duration: 0.8,
     height: 0,
     transformOrigin: "right top",
@@ -15,8 +15,8 @@ export const staggerReveal = (node1, node2) => {
 };
 
 // CLOSE MENU
-export const staggerRevealClose = (node1, node2) => {
-  gsap.to([node1, node2], {
+export const staggerRevealClose = (node1, node2, node3) => {
+  gsap.to([node1, node2, node3], {
     duration: 0.8,
     height: 0,
     ease: "power3.inOut",
