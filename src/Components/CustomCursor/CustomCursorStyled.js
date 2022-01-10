@@ -19,7 +19,9 @@ export const CustomCursorStyled = styled.div`
       height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     transform-origin: center;
     pointer-events: none;
-
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
     &.small {
       width: 1.8rem;
       height: 1.8rem;

@@ -13,8 +13,8 @@ ReactDOM.render(
   <React.StrictMode>
     <AppProvider>
       <CursorManager>
-        <CustomCursor />
         <GlobalStyle />
+        <CustomCursor />
         <Router>
           <App />
         </Router>
