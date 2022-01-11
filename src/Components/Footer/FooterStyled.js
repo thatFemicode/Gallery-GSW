@@ -43,12 +43,12 @@ export const FooterStyled = styled.footer`
           width: 220px;
           /* margin: 0 auto; */
         }
-        @media (max-width: ${({ theme }) => theme.balls}) {
-          width: 180px;
-        }
 
         @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
           width: 300px;
+        }
+        @media (max-width: ${({ theme }) => theme.balls}) {
+          width: 200px;
         }
         @media screen and (min-height: 1100px) and (max-height: 1366px) and (max-width: 1024px) {
           width: 250px;
@@ -84,15 +84,15 @@ export const FooterStyled = styled.footer`
             font-size: 2.5rem;
             /* margin: 0 auto; */
           }
-          @media (max-width: ${({ theme }) => theme.balls}) {
+          /* @media (max-width: ${({ theme }) => theme.balls}) {
             font-size: 2rem;
-          }
-          @media (max-width: ${({ theme }) => theme.desktop}) {
-            font-size: 1.7rem;
-          }
+          } */
 
           @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
             font-size: 3.5rem;
+          }
+          @media (max-width: ${({ theme }) => theme.balls}) {
+            font-size: 2.5rem;
           }
           @media screen and (min-height: 1100px) and (max-height: 1366px) and (max-width: 1024px) {
             font-size: 2.5rem;
@@ -102,6 +102,9 @@ export const FooterStyled = styled.footer`
           }
           @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
             font-size: 2rem;
+          }
+          @media (max-width: ${({ theme }) => theme.desktop}) {
+            font-size: 1.7rem;
           }
           @media (max-width: ${({ theme }) => theme.images}) {
             font-size: 1.5rem;
@@ -208,14 +211,12 @@ export const FooterStyled = styled.footer`
             width: 130px;
             /* margin: 0 auto; */
           }
-          @media (max-width: ${({ theme }) => theme.balls}) {
-            max-width: 100px;
-          }
-          @media (max-width: ${({ theme }) => theme.desktop}) {
-            max-width: 90px;
-          }
+
           @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
             width: 150px;
+          }
+          @media (max-width: ${({ theme }) => theme.balls}) {
+            width: 80px;
           }
           @media screen and (min-height: 1100px) and (max-height: 1366px) and (max-width: 1024px) {
             width: 100px;
@@ -225,6 +226,9 @@ export const FooterStyled = styled.footer`
           }
           @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
             width: 120px;
+          }
+          @media (max-width: ${({ theme }) => theme.desktop}) {
+            max-width: 90px;
           }
           @media (max-width: ${({ theme }) => theme.mobil}) {
             width: 80px;
@@ -253,12 +257,13 @@ export const FooterStyled = styled.footer`
           font-size: 1.8rem;
           /* margin: 0 auto; */
         }
-        @media (max-width: ${({ theme }) => theme.desktop}) {
-          font-size: 1.5rem;
-        }
+
         @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
           font-size: 2.5rem;
           /* right: 140px; */
+        }
+        @media (max-width: ${({ theme }) => theme.balls}) {
+          font-size: 1.6rem;
         }
         @media screen and (min-height: 1100px) and (max-height: 1366px) and (max-width: 1024px) {
           font-size: 2rem;
@@ -268,6 +273,9 @@ export const FooterStyled = styled.footer`
         }
         @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
           font-size: 2rem;
+        }
+        @media (max-width: ${({ theme }) => theme.desktop}) {
+          font-size: 1.5rem;
         }
         @media (max-width: ${({ theme }) => theme.images}) {
           transform: rotate(-90deg);
