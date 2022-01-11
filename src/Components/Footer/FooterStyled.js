@@ -224,7 +224,7 @@ export const FooterStyled = styled.footer`
           @media screen and (min-height: 100px) and (max-height: 800px) and (max-width: 1280px) {
             width: 150px;
           }
-          @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+          @media screen and (min-height: 100px) and (max-height: 750px) and (max-width: 1024px) {
             width: 120px;
           }
           @media (max-width: ${({ theme }) => theme.desktop}) {

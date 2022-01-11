@@ -13,9 +13,7 @@ export const TributeStyled = styled.section`
   @media (max-width: ${({ theme }) => theme.mins}) {
     padding-top: 3rem;
   }
-  @media (max-width: ${({ theme }) => theme.images}) {
-    height: unset;
-  }
+
   @media screen and (min-height: 1100px) and (max-height: 1593px) and (max-width: 1440px) {
     height: unset;
     padding-top: 6rem;
@@ -26,7 +24,9 @@ export const TributeStyled = styled.section`
   @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
     height: 100vh;
   }
-
+  @media (max-width: ${({ theme }) => theme.images}) {
+    height: unset;
+  }
   .video-player {
     width: 70%;
     height: 400px;
@@ -159,7 +159,11 @@ export const TributeStyled = styled.section`
       transform: unset;
       left: 72%;
     }
+    @media screen and (min-height: 100px) and (max-height: 915px) and (max-width: 414px) {
+      bottom: -40vh;
+    }
     @media (max-width: ${({ theme }) => theme.mobil}) {
+      bottom: 0;
       left: 60%;
     }
     @media screen and (min-height: 900px) and (max-height: 1024px) and (max-width: 768px) {
