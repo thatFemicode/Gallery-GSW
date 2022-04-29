@@ -104,18 +104,7 @@ const Hamburger = ({ state }) => {
                 </div>
               </div>
 
-              {/* <div className="locations">
-                Locations:
-                Returning the list of cities
-                {cities.map(el => (
-                  <span
-                    key={el.name}
-                    onMouseEnter={() => handleCity(el.image, cityBackground)}
-                    onMouseOut={() => handleCityReturn(cityBackground)}>
-                    {el.name}
-                  </span>
-                ))}
-              </div> */}
+
             </div>
           </div>
         </OuterLayout>
